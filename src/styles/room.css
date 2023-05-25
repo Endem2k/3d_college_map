@@ -1,0 +1,31 @@
+.room-details {
+    position: relative;
+}
+
+.room-details__container {
+    width: 100%;
+    height: calc(100vh - 72px);
+    position: absolute;
+    z-index: 1000;
+    padding: 36px 0;
+    overflow: auto;
+    background-color: #333;
+}
+
+.room-details__inner {
+    width: 96%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fafafa;
+}
+
+.room-details__link {
+    font-size: 20px;
+    color: #fcfcfc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.room-details__link:hover {
+    text-decoration: underline;
+  }

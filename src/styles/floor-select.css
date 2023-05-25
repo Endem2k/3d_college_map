@@ -1,0 +1,50 @@
+.floor-select {
+
+}
+
+.floor-select h2 {
+    margin-bottom: 8px;
+}
+
+.floor-select__button {
+    border: none;
+    flex-basis: 64px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fafafa;
+    transition: 250ms ease-in;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.floor-select__button:hover {
+    filter: brightness(.9);
+}
+
+.floor-select__button.selected {
+    background-color: #fafafa;
+    color: #333;
+}
+
+.floor-select__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+@media screen and (max-width: 560px) {
+
+
+    .floor-select__list  {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .floor-select__button {
+        height: 48px;
+        flex-basis: 100%;
+    }
+  }
