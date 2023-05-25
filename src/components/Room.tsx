@@ -1,4 +1,4 @@
-import { createRef, useEffect, useRef, useState } from "react";
+import { createRef, useEffect, useState } from "react";
 import { halfPi, wallWidth } from "../constants";
 import { Text } from "@react-three/drei";
 import { ShapeRoom } from "./ShapeRoom";
