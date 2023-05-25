@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { createRef, useEffect, useRef, useState } from "react";
 import { halfPi, wallWidth } from "../constants";
 import { Text } from "@react-three/drei";
 import { ShapeRoom } from "./ShapeRoom";
 import { ThreeEvent } from "@react-three/fiber";
-import { Color } from "three";
+import { Color, Material, BufferGeometry, Mesh } from "three";
 
 import Roboto from "../assets/fonts/Roboto-Regular.ttf";
 
@@ -13,7 +13,7 @@ type Props = {
 	onClick?: (evt: ThreeEvent<MouseEvent>, id: number) => void;
 };
 
-function Material({ color }: { color: Color | number | undefined }) {
+function RoomMaterial({ color }: { color: Color | number | undefined }) {
 	return (
 		<meshPhongMaterial
 			color={color}
@@ -27,7 +27,7 @@ function Material({ color }: { color: Color | number | undefined }) {
 
 export function Room({ room, selected, onClick }: Props) {
 	const [hovering, setHovering] = useState(false);
-	const meshRef = useRef<any>();
+	const meshRef = createRef<Mesh<BufferGeometry, Material | Material[]>>();
 
 	const positionX = room.floor
 		? room.floor.x * 10 + room.floor.width * 5
@@ -92,7 +92,7 @@ export function Room({ room, selected, onClick }: Props) {
 					</>
 				)}
 
-				<Material color={selected || hovering ? 0x000000 : 0x2a8fff} />
+				<RoomMaterial color={selected || hovering ? 0x000000 : 0x2a8fff} />
 			</mesh>
 
 			{room.walls && (

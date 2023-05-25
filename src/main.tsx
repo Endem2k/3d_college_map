@@ -6,11 +6,11 @@ import { RoomDetails } from "./routes/room-details.tsx";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/3d_college_map",
 		element: <Root />,
 		children: [
 			{
-				path: "/room/:id",
+				path: "./room/:id",
 				element: <RoomDetails />,
 			},
 		],
