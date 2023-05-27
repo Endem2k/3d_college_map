@@ -21,7 +21,7 @@ type Room = {
     };
     content?: Content,
     selected?: boolean,
-    fontSize?: number
+    fontSize?: number,
 }
 
 type Subject = {
@@ -34,7 +34,8 @@ type Content = {
     subjects?: Subject[],
     title?: string,
     text?: string,
-    main?: string
+    main?: string,
+    images?: string[],
 }
 
 type Floor = {

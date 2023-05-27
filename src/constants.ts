@@ -1,5 +1,26 @@
+import IMG112 from './assets/room_images/112_1.jpg';
+import IMG114 from './assets/room_images/114_1.jpg';
+import IMG1161 from './assets/room_images/116_1.jpg';
+import IMG1162 from './assets/room_images/116_2.jpg';
+import IMG1181 from './assets/room_images/118_1.jpg';
+import IMG1182 from './assets/room_images/118_2.jpg';
+import IMG1191 from './assets/room_images/119_1.jpg';
+import IMG212 from './assets/room_images/212.jpg';
+import IMG2171 from './assets/room_images/217_1.jpg';
+import IMG2181 from './assets/room_images/218_1.jpg';
+import IMG227228229 from './assets/room_images/227-228-229.jpg';
+import IMG2302311 from './assets/room_images/230-231_1.jpg';
+import IMG2321 from './assets/room_images/232_1.jpg';
+import IMG2331 from './assets/room_images/233_1.jpg';
+import IMG234235236237 from './assets/room_images/234-235-236-237.jpg';
+import IMG2401 from './assets/room_images/240_1.jpg';
+import IMG2402 from './assets/room_images/240_2.jpg';
+import IMG2411 from './assets/room_images/241_1.jpg';
+import IMGLAB from './assets/room_images/lab.jpg';
+
 export const wallWidth = 5;
 export const halfPi = Math.PI / 2;
+
 
 export const FLOORS: Floor[] = [
     {
@@ -1162,7 +1183,8 @@ export const FLOORS: Floor[] = [
                     height: 7
                 },
                 content: {
-                    title: '2.12'
+                    title: '2.12',
+                    images: [IMG212]
                 }
             },
             {
@@ -1172,7 +1194,7 @@ export const FLOORS: Floor[] = [
                     y: 18,
                     width: 4,
                     height: 7
-                }
+                },
             },
             {
                 id: 72,
@@ -1183,7 +1205,8 @@ export const FLOORS: Floor[] = [
                     height: 7
                 },
                 content: {
-                    title: 'Лаборатория'
+                    title: 'Лаборатория',
+                    images: [IMGLAB]
                 }
             },
             {
@@ -1269,7 +1292,9 @@ export const FLOORS: Floor[] = [
                     height: 7
                 },
                 content: {
-                    title: '2.41'
+                    title: '2.41',
+                    images: [IMG2411]
+
                 }
             },
             {
@@ -1281,7 +1306,8 @@ export const FLOORS: Floor[] = [
                     height: 7
                 },
                 content: {
-                    title: '2.17'
+                    title: '2.17',
+                    images: [IMG2171]
                 }
             },
             {
@@ -1301,6 +1327,8 @@ export const FLOORS: Floor[] = [
                         teacher: { name: 'Чулков Виктор Александрович' },
                         title: 'МДК.03.01Технология инсталляции, регулировки, технического обслуживания и ремонта аудио и видео техники'
                     }],
+                    images: [IMG2181]
+
                 }
             },
             {
@@ -1376,7 +1404,8 @@ export const FLOORS: Floor[] = [
                     height: 6
                 },
                 content: {
-                    title: 'Кабинет\nдиректора'
+                    title: 'Кабинет\nдиректора',
+                    images: [IMG227228229]
                 }
             },
             {
@@ -1389,7 +1418,9 @@ export const FLOORS: Floor[] = [
                     height: 6
                 },
                 content: {
-                    title: 'Зам.\nдиректора'
+                    title: 'Зам.\nдиректора',
+                    images: [IMG227228229]
+
                 }
             },
             {
@@ -1402,7 +1433,9 @@ export const FLOORS: Floor[] = [
                     height: 6
                 },
                 content: {
-                    title: 'Бухгалтерия'
+                    title: 'Бухгалтерия',
+                    images: [IMG2302311]
+
                 }
             },
             {
@@ -1423,7 +1456,9 @@ export const FLOORS: Floor[] = [
                     height: 6
                 },
                 content: {
-                    title: '2.33'
+                    title: '2.33',
+                    images: [IMG2331]
+
                 }
             },
             {
@@ -1435,7 +1470,9 @@ export const FLOORS: Floor[] = [
                     height: 6
                 },
                 content: {
-                    title: '2.32'
+                    title: '2.32',
+                    images: [IMG2321]
+
                 }
             },
             {
@@ -1457,7 +1494,9 @@ export const FLOORS: Floor[] = [
                 },
                 fontSize: 8,
                 content: {
-                    title: '2.37'
+                    title: '2.37',
+                    images: [IMG234235236237]
+
                 }
             },
             {
@@ -1470,7 +1509,8 @@ export const FLOORS: Floor[] = [
                 },
                 fontSize: 8,
                 content: {
-                    title: '2.36'
+                    title: '2.36',
+                    images: [IMG234235236237]
                 }
             },
             {
@@ -1483,7 +1523,8 @@ export const FLOORS: Floor[] = [
                 },
                 fontSize: 8,
                 content: {
-                    title: '2.35'
+                    title: '2.35',
+                    images: [IMG234235236237]
                 }
             },
             {
@@ -1497,7 +1538,8 @@ export const FLOORS: Floor[] = [
                 },
                 fontSize: 8,
                 content: {
-                    title: '2.34'
+                    title: '2.34',
+                    images: [IMG234235236237]
                 }
             },
             {
@@ -1522,7 +1564,9 @@ export const FLOORS: Floor[] = [
                     height: 5.25
                 },
                 content: {
-                    title: 'Актовый зал'
+                    title: 'Актовый зал',
+                    images: [IMG2401, IMG2402]
+
                 }
             },
             {
@@ -1556,7 +1600,7 @@ export const FLOORS: Floor[] = [
                     height: 5
                 },
                 content: {
-                    title: '2.48'
+                    title: '2.48',
                 }
             },
             {
@@ -1671,7 +1715,8 @@ export const FLOORS: Floor[] = [
                 fontSize: 5,
                 content: {
                     title: '2.51'
-                }
+                },
+
             },
             {
                 id: 113,
@@ -1928,7 +1973,8 @@ export const FLOORS: Floor[] = [
                             },
                             title: 'МДК.09.01 Проектирование и разработка веб-приложений'
                         }
-                    ]
+                    ],
+                    images: [IMG114]
                 }
             },
             {
@@ -1941,7 +1987,8 @@ export const FLOORS: Floor[] = [
                     height: 5.75,
                 },
                 content: {
-                    title: '1.16'
+                    title: '1.16',
+                    images: [IMG1161, IMG1162]
                 }
             },
             {
@@ -2029,7 +2076,8 @@ export const FLOORS: Floor[] = [
                             teacher: { name: 'Кондратьев Виталий Сергеевич' },
                             title: 'Оптимизация веб-приложений'
                         }
-                    ]
+                    ],
+                    images: [IMG1181, IMG1182]
                 }
             },
             {
@@ -2052,7 +2100,8 @@ export const FLOORS: Floor[] = [
                             teacher: { name: 'Фофонова Елена Владимировна' },
                             title: 'Основы предпринимательской деятельности'
                         }
-                    ]
+                    ],
+                    images: [IMG1191]
                 }
             },
             {
@@ -2250,6 +2299,9 @@ export const FLOORS: Floor[] = [
                 ],
                 content: {
                     title: "1.12",
+                    images: [
+                        IMG112
+                    ]
                 },
             },
             {

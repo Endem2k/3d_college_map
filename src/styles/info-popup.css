@@ -2,6 +2,7 @@
 .info {
     align-self: start;
     pointer-events: initial;
+    width: 100%;
   }
   
   .info-popup {
@@ -14,6 +15,7 @@
     height: 0;
     border-radius: 12px;
     padding: 0;
+    width: auto;
     backdrop-filter: blur(4px);
   }
   
@@ -65,11 +67,38 @@
   .info-popup__link:hover {
     text-decoration: underline;
   }
+
+  .info-popup__images {
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .info-popup__image {
+    display: block;
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+  }
   
+  .swiper-pagination-bullet-active {
+    background-color: #333;
+  }
+
   @media screen and (max-width: 560px) {
     .info {
       order: 2;
       max-height: 100%;
       overflow: auto;
+    }
+
+    .info-popup__image {
+      max-width: 100%;
+
     }
   }
