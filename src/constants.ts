@@ -1,4 +1,6 @@
+import IMGLAB from './assets/room_images/lab.jpg';
 import IMG112 from './assets/room_images/112_1.jpg';
+import IMG1122 from './assets/room_images/112_2.jpg';
 import IMG114 from './assets/room_images/114_1.jpg';
 import IMG1161 from './assets/room_images/116_1.jpg';
 import IMG1162 from './assets/room_images/116_2.jpg';
@@ -16,7 +18,20 @@ import IMG234235236237 from './assets/room_images/234-235-236-237.jpg';
 import IMG2401 from './assets/room_images/240_1.jpg';
 import IMG2402 from './assets/room_images/240_2.jpg';
 import IMG2411 from './assets/room_images/241_1.jpg';
-import IMGLAB from './assets/room_images/lab.jpg';
+import IMG3331 from './assets/room_images/333_1.jpg';
+import IMG3332 from './assets/room_images/333_2.jpg';
+import IMG2201 from './assets/room_images/220_1.jpg';
+import IMG2202 from './assets/room_images/220_2.jpg';
+import IMG2203 from './assets/room_images/220_3.jpg';
+import IMG1321 from './assets/room_images/132_1.jpg';
+import IMG1311 from './assets/room_images/131_1.jpg';
+import IMG1111 from './assets/room_images/1111.jpg';
+import IMG3531 from './assets/room_images/353_1.jpg';
+import IMG3321 from './assets/room_images/332_1.jpg'
+import IMG3181 from './assets/room_images/318_1.jpg'
+import IMG3141 from './assets/room_images/314_1.jpg'
+import IMG3111 from './assets/room_images/311_1.jpg'
+
 
 export const wallWidth = 5;
 export const halfPi = Math.PI / 2;
@@ -375,7 +390,10 @@ export const FLOORS: Floor[] = [
                     },
                 ],
                 content: {
-                    title: '3.11'
+                    title: '3.11',
+                    images: [
+                        IMG3111
+                    ]
                 }
             },
             {
@@ -419,7 +437,10 @@ export const FLOORS: Floor[] = [
                 },
                 fontSize: 5,
                 content: {
-                    title: '3.14'
+                    title: '3.14',
+                    images: [
+                        IMG3141
+                    ]
                 }
             },
             {
@@ -623,8 +644,12 @@ export const FLOORS: Floor[] = [
                 ],
                 fontSize: 5,
                 content: {
-                    title: '3.18\n3.19'
-                }
+                    title: '3.18\n3.19',
+                    images: [
+                        IMG3181
+                    ]
+                },
+
             },
             {
                 id: 139,
@@ -807,7 +832,7 @@ export const FLOORS: Floor[] = [
                     subjects: [{
                         teacher: { name: 'Капинос Светлана Викторовна' },
                         title: 'Иностранный язык'
-                    }]
+                    }],
                 }
             },
             {
@@ -823,7 +848,10 @@ export const FLOORS: Floor[] = [
                     subjects: [{
                         teacher: { name: 'Аксенова Ирина Викторовна' },
                         title: 'Иностранный язык'
-                    }]
+                    }],
+                    images: [
+                        IMG3321
+                    ]
                 }
             },
             {
@@ -835,7 +863,11 @@ export const FLOORS: Floor[] = [
                     height: 5.25
                 },
                 content: {
-                    title: '3.33'
+                    title: '3.33',
+                    images: [
+                        IMG3331,
+                        IMG3332
+                    ]
                 }
             },
             {
@@ -893,6 +925,9 @@ export const FLOORS: Floor[] = [
                                 name: 'Логинова Ирина Евгеньевна'
                             }
                         }
+                    ],
+                    images: [
+                        IMG3531
                     ]
                 }
             },
@@ -1228,6 +1263,11 @@ export const FLOORS: Floor[] = [
                             teacher: { name: 'Дубровин Виталий Александрович' },
                             title: 'МДК.03.01 Эксплуатация объектов сетевой инфраструктуры'
                         }
+                    ],
+                    images: [
+                        IMG2201,
+                        IMG2202,
+                        IMG2203
                     ]
                 }
             },
@@ -2057,6 +2097,8 @@ export const FLOORS: Floor[] = [
                             teacher: { name: 'МДК.01.03 Разработка мобильных приложений' },
                             title: 'Финская Анастасия Константиновна'
                         }
+                    ], images: [
+                        IMG1111
                     ]
                 }
             },
@@ -2300,7 +2342,8 @@ export const FLOORS: Floor[] = [
                 content: {
                     title: "1.12",
                     images: [
-                        IMG112
+                        IMG112,
+                        IMG1122
                     ]
                 },
             },
@@ -2380,7 +2423,10 @@ export const FLOORS: Floor[] = [
                     height: 5.25,
                 },
                 content: {
-                    title: '1.31'
+                    title: '1.31',
+                    images: [
+                        IMG1311
+                    ]
                 }
             },
             {
@@ -2398,6 +2444,9 @@ export const FLOORS: Floor[] = [
                             teacher: { name: 'Маслов Руслан Андреевич' },
                             title: 'МДК.01.01 Разработка программных модулей'
                         }
+                    ],
+                    images: [
+                        IMG1321
                     ]
                 }
             },
